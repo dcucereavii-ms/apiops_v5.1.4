@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "postman",
+    "allowTracing": false,
+    "scope": "/apis",
+    "state": "active"
+  }
+}
