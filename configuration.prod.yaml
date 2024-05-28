@@ -13,7 +13,6 @@ loggers:
         loggerType: azureEventHub
         description: prod event hub
         credentials:
-          name: "apim-logs/apim-logs",
           connectionString: "{{Logger-Credentials--6655e6f6fb42681b6c022985}}"
         isBuffered: true
 # namedValues:
