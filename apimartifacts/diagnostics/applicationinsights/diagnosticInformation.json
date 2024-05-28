@@ -1,0 +1,49 @@
+{
+  "properties": {
+    "alwaysLog": "allErrors",
+    "backend": {
+      "request": {
+        "body": {
+          "bytes": 8192
+        },
+        "headers": [
+          "Authorization"
+        ]
+      },
+      "response": {
+        "body": {
+          "bytes": 8192
+        },
+        "headers": [
+          "Authorization"
+        ]
+      }
+    },
+    "frontend": {
+      "request": {
+        "body": {
+          "bytes": 8192
+        },
+        "headers": [
+          "Authorization"
+        ]
+      },
+      "response": {
+        "body": {
+          "bytes": 8192
+        },
+        "headers": [
+          "Authorization"
+        ]
+      }
+    },
+    "httpCorrelationProtocol": "Legacy",
+    "logClientIp": true,
+    "loggerId": "/subscriptions/40f77b11-d38b-4231-aee3-7c4b23b76374/resourceGroups/apim-demo/providers/Microsoft.ApiManagement/service/apim-demo-qa/loggers/apim-demo",
+    "sampling": {
+      "percentage": 100,
+      "samplingType": "Fixed"
+    },
+    "verbosity": "information"
+  }
+}
