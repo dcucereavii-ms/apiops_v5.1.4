@@ -8,7 +8,7 @@ loggers:
         credentials:
           instrumentationKey: "{{Logger-Credentials--6442a40f217d20156c343078}}"
         isBuffered: true
-    - name: apim-logs/apim-logs
+    - name: event-hub-logger
       properties:
         loggerType: azureEventHub
         description: prod event hub
