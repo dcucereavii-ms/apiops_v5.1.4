@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "description": "test",
+    "displayName": "tier1",
+    "state": "notPublished",
+    "subscriptionRequired": false
+  }
+}
