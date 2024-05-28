@@ -1,0 +1,18 @@
+<policies>
+	<inbound>
+		<base />
+		<set-method>POST</set-method>
+		<set-query-parameter name="name" exists-action="override">
+			<value>catalog, product</value>
+		</set-query-parameter>
+	</inbound>
+	<backend>
+		<base />
+	</backend>
+	<outbound>
+		<base />
+	</outbound>
+	<on-error>
+		<base />
+	</on-error>
+</policies>
