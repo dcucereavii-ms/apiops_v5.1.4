@@ -12,9 +12,9 @@ loggers:
       properties:
         loggerType: azureEventHub
         description: prod event hub
-        resourceId: "/subscriptions/40f77b11-d38b-4231-aee3-7c4b23b76374/resourceGroups/apim-demo/providers/Microsoft.EventHub/namespaces/apim-logs"
         credentials:
-          instrumentationKey: "{{Logger-Credentials--6655e6f6fb42681b6c022985}}"
+          name: "apim-logs/apim-logs",
+          connectionString: "{{Logger-Credentials--6655e6f6fb42681b6c022985}}"
         isBuffered: true
 # namedValues:
 #   - name: environment
