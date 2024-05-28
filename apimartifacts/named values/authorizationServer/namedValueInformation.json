@@ -1,7 +1,0 @@
-{
-  "properties": {
-    "displayName": "authorizationServer",
-    "secret": true,
-    "tags": []
-  }
-}
