@@ -1,22 +1,21 @@
 apimServiceName: apim-prod-demo
 loggers:
-    - name: apim-demo
-      properties:
-        loggerType: applicationInsights
-        description: prod application insights
-        resourceId: "/subscriptions/40f77b11-d38b-4231-aee3-7c4b23b76374/resourceGroups/apim-demo/providers/microsoft.insights/components/apim-demo"
-        credentials:
-          instrumentationKey: "{{Logger-Credentials--6442a40f217d20156c343078}}"
-        isBuffered: true
-    - name: event-hub-logger
-      properties:
-        loggerType: azureEventHub
-        description: prod event hub
-        credentials:
-            connectionString: "{{Logger-Credentials--6655e6f6fb42681b6c022985}}"
-            name: "apim-logs/apim-logs"   # The name of the event hub
-            policyName: "send-apim-logs"  # The name of the shared access policy
-        isBuffered: true
+  - name: apim-demo
+    properties:
+      loggerType: applicationInsights
+      description: prod application insights
+      resourceId: "/subscriptions/40f77b11-d38b-4231-aee3-7c4b23b76374/resourceGroups/apim-demo/providers/microsoft.insights/components/apim-demo"
+      credentials:
+        instrumentationKey: "{{Logger-Credentials--6442a40f217d20156c343078}}"
+      isBuffered: true
+  - name: event-hub-logger
+    properties:
+      loggerType: azureEventHub
+      description: prod event hub
+      credentials:
+        connectionString: "{{Logger-Credentials--6655e6f6fb42681b6c022985}}"
+        name: apim-logs/apim-logs   # The name of the event hub
+      isBuffered: true
 # namedValues:
 #   - name: environment
 #     properties:
