@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "description": "Workshop-Monitoring",
+    "protocol": "http",
+    "resourceId": "https://management.azure.com/subscriptions/40f77b11-d38b-4231-aee3-7c4b23b76374/resourceGroups/LA-WS-RG/providers/Microsoft.Web/sites/Workshop-Monitoring",
+    "url": "https://workshop-monitoring.azurewebsites.net"
+  }
+}
