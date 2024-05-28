@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "description": "On Premises Self-Hosted Gateway",
+    "locationData": {
+      "name": "OnPremise"
+    }
+  }
+}
