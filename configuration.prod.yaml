@@ -14,7 +14,7 @@ loggers:
         description: prod event hub
         credentials:
             connectionString: "{{Logger-Credentials--6655e6f6fb42681b6c022985}}"
-            eventHubName: "apim-logs/apim-logs"   # The name of the event hub
+            name: "apim-logs/apim-logs"   # The name of the event hub
             policyName: "send-apim-logs"  # The name of the shared access policy
         isBuffered: true
 # namedValues:
