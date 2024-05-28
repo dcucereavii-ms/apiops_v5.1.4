@@ -1,0 +1,31 @@
+<policies>
+	<inbound>
+		<base />
+		<!-- Extract the JWT token from the Authorization header -->
+		<set-variable name="token" value="@(context.Request.Headers.GetValueOrDefault("Authorization"))" />
+		<!-- Extract the kid value from the JWT token header -->
+		<set-variable name="kid" value="@{  
+            var jwtToken = context.Variables.GetValueOrDefault<string>("token");  
+            if (!string.IsNullOrEmpty(jwtToken))  
+            {  
+                var parts = jwtToken.Split('.');  
+                if (parts.Length == 3)  
+                {  
+                    var header = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String(parts[0]));  
+                    var headerJson = Newtonsoft.Json.Linq.JObject.Parse(header);  
+                    var kid = headerJson["kid"]?.ToString() ?? "";   
+                }  
+            }  
+            return "";  
+        }" />
+	</inbound>
+	<backend>
+		<base />
+	</backend>
+	<outbound>
+		<base />
+	</outbound>
+	<on-error>
+		<base />
+	</on-error>
+</policies>
