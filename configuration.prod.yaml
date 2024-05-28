@@ -9,12 +9,14 @@ loggers:
           instrumentationKey: "{{Logger-Credentials--6442a40f217d20156c343078}}"
         isBuffered: true
     - name: event-hub-logger
-      properties:
-        loggerType: azureEventHub
-        description: prod event hub
-        credentials:
-          connectionString: "{{Logger-Credentials--6655e6f6fb42681b6c022985}}"
-        isBuffered: true
+    properties:
+      loggerType: azureEventHub
+      description: prod event hub
+      credentials:
+        connectionString: "{{Logger-Credentials--6655e6f6fb42681b6c022985}}"
+        name: eventHubName   # The name of the event hub
+        policyName: RootManageSharedAccessKey  # The name of the shared access policy
+      isBuffered: true
 # namedValues:
 #   - name: environment
 #     properties:
