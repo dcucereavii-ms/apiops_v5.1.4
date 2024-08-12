@@ -1,0 +1,35 @@
+openapi: 3.0.1
+info:
+  title: AzureOpenAI
+  description: ''
+  version: '1.0'
+servers:
+  - url: https://apim-demo-qa.azure-api.net/ai
+paths:
+  /completions:
+    post:
+      summary: completion
+      operationId: completion
+      parameters:
+        - name: api-key
+          in: header
+          schema:
+            enum:
+              - ''
+            type: ''
+      responses:
+        '200':
+          description: 
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

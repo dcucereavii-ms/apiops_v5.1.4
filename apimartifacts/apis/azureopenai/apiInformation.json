@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "displayName": "AzureOpenAI",
+    "isCurrent": true,
+    "path": "ai",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://sillyopenai.openai.azure.com/openai",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}
