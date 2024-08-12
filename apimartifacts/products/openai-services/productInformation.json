@@ -1,0 +1,9 @@
+{
+  "properties": {
+    "approvalRequired": false,
+    "description": "Azure Open AI services",
+    "displayName": "openAI Services",
+    "state": "notPublished",
+    "subscriptionRequired": true
+  }
+}
